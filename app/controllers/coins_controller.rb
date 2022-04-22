@@ -2,7 +2,7 @@ class CoinsController < ApplicationController
   layout "adm" # criei adm.html.erb em layouts
 
   before_action :set_coin, only: %i[ show edit update destroy ]
-  before_action :set_mining_type_options, only: %i[ show edit update destroy ]
+  before_action :set_mining_type_options, only: %i[ new create edit update ]
 
   # GET /coins or /coins.json
   def index

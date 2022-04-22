@@ -1,7 +1,7 @@
-<h1>Seja bem vindo!!</h1>
-<h3>Olá eu me chamo <%= @meu_nome %></h3>
-
-<h3><strong>A data de hoje é </strong> <%= date_br(Date.today)%></h3>
+<h1><%= t('welcome') %></h1>
+<h3><%= t('hello')%> eu me chamo <%= @meu_nome %></h3>
+<p> O idioma desta aplicação é <strong><%= t('current_locale') %></strong></p>
+<h3><strong>Hoje é </strong> <%= date_br(Date.today)%></h3>
 
 <%= render "menu"%>
 

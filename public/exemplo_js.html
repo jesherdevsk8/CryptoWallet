@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style type="text/css">
+    body {
+            background-image: url("https://orig00.deviantart.net/25c2/f/2018/259/2/3/1_by_thefearmaster-dcn1d41.gif");
+            background-size: cover;
+            color: white;	  
+            }
+    .pergunta{
+            font-size: 50px;
+            font-family: monospace;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px 	#00FFFF, 0 0 30px 	#00FFFF, 0 0 40px 	#00FFFF, 0 0 55px 	#00FFFF, 0 0 75px #00FFFF;
+            color:	#ffffff;
+    }
+    div{
+        text-align: center;
+        margin-top: 15%;
+    }
+    .sim{
+        font-family: monospace;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #00FFFF;
+        border-width: 4px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .sim:hover{
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+    .nao{
+        font-family: monospace;
+        font-size: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #00FFFF;
+        border-width: 4px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .nao:hover{
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+    
+</style>
+</head>
+<body>
+    <center>
+        <h1 style="color: red;">Testando JS</h1>
+    </center>
+
+    <div id="click">
+        <H1 class="pergunta" > DESEJA CADASTRAR UMA MOEDA? </H1>    
+        <button class="sim" onclick="functionSim()" id="btnSim">
+            SIM
+        </button>
+        <a href="http://127.0.0.1:3000" target="_blank">
+        <button class="nao" onclick="" id="btnNao">
+            NÃO
+        </button>
+        </a>
+    </div> 
+        
+    <script>
+        function functionSim(){
+            var r = confirm("VOCÊ TEM CERTEZA?")
+            if (r==true){
+                document.location.href = "coins"
+            }
+            else{
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

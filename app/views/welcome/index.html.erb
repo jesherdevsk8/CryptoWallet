@@ -1,8 +1,8 @@
-<h1><%= t('welcome') %></h1>
-<h3><%= t('hello')%> eu me chamo <%= @meu_nome %></h3>
-<p> O idioma desta aplicação é <strong><%= t('current_locale') %></strong></p>
-<h3><strong>Hoje é </strong> <%= date_br(Date.today)%></h3>
-
-<%= render "menu"%>
-
-<p>Estou aprendendo <strong><%= @curso%></strong></p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('welcome') %></h1>
+  <h3 class="lead"><%= t('hello')%> eu me chamo <%= @meu_nome %></h3>
+  <p> O idioma desta aplicação é <strong><%= t('current_locale') %></strong></p>
+  <h3><strong>Hoje é </strong> <%= date_br(Date.today)%></h3>
+  <hr class="my-4">
+  <%= render "menu"%>
+</div>
